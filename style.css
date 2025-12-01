@@ -8,14 +8,6 @@
   background
 }
 
-/* .loading-indicator{
-    background-image: url("images/bg-today-large.svg");
-    height: 180px;
-    width: 100%;
-    border-radius: 10px;
-    background-size: cover;
-  } */
-
 /* Logo */
 .logo-image {
   width: 170px;
@@ -279,13 +271,13 @@ h1 {
     width: 100%;
     border-radius: 10px;
   }
-  /* .loading-indicator{
+  .loading-indicator{
     background-image: url("images/bg-today-large.svg");
     height: 180px;
     width: 100%;
     border-radius: 10px;
     background-size: cover;
-  } */
+  }
 }
 .daily-icon {
   width: 40px;
@@ -321,6 +313,4 @@ h1 {
   font-size: 16px;
   font-weight: 600;
   color: #fff;
-
 }
-
