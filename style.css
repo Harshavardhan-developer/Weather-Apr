@@ -1,0 +1,316 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  background
+}
+
+/* Logo */
+.logo-image {
+  width: 170px;
+  height: 70px;
+}
+
+/* Body */
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0a0e27 0%, #1a1f3a 100%);
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+/* Units Button */
+.btn-units {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  transition: 0.2s ease;
+}
+
+.btn-units:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+/* Heading */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.search-input-wrapper {
+  position: relative;
+  flex: 1;
+  max-width: 500px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.4);
+  pointer-events: none;
+}
+
+.search-input {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: #fff;
+  padding: 0.875rem 1rem 0.875rem 3rem;
+  font-size: 0.95rem;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.search-input:focus {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(88, 101, 242, 0.5);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(88, 101, 242, 0.1);
+}
+
+
+/* Search Button */
+.btn-search {
+  background: #5865f2;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  padding: 0.875rem 2rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: 0.2s ease;
+  text-align: center;
+}
+
+/* Cards */
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+}
+
+.weather-card {
+  height: 268px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weather-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.weather-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.loading-card {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* Info Cards */
+.info-card {
+  transition: 0.2s ease;
+}
+
+.info-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.info-card .card-body {
+  padding: 1.25rem;
+}
+
+.card-subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.875rem;
+}
+
+.card-value {
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+/* Forecast */
+.forecast-card {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.forecast-item {
+  min-width: 90px;
+  height: 130px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+}
+
+/* Hourly */
+.hourly-card {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.hourly-forecast {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.hourly-item {
+  height: 60px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+}
+.card-title{
+  color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .search-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .btn-search {
+    width: 100%;
+  }
+  .weather-card {
+    height: 180px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .images-1{
+    height: 180px;
+    width: 100%;
+    border-radius: 10px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .weather-card {
+    height: 220px;
+    width: 500px;
+  }
+
+  .card-value {
+    font-size: 1.5rem;
+  }
+  .images-1{
+    height: 250px;
+    width: 500px;
+  }
+}
+@media (max-width: 900px) {
+
+  .weather-card {
+    height: 180px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .images-1{
+    height: 180px;
+    width: 100%;
+    border-radius: 10px;
+    background-size: cover;
+  }
+}
+@media (max-width: 1400px) {
+
+  .weather-card {
+    height: 180px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .loading-indicator{
+    background-image: url("images/bg-today-large.svg");
+    height: 180px;
+    width: 100%;
+    border-radius: 10px;
+    background-size: cover;
+  }
+}
+.daily-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.forecast-card {
+  text-align: center;
+  padding: 10px;
+}
+.dayName {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.hour-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  display: block;
+  margin-right: 10px;
+}
+.hour-time {
+  margin: 20px 0 2px 0;
+  font-size: 10px;
+  color: #fff;
+}
+
+.hour-temp {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
