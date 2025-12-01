@@ -8,13 +8,13 @@
   background
 }
 
-.loading-indicator{
+/* .loading-indicator{
     background-image: url("images/bg-today-large.svg");
     height: 180px;
     width: 100%;
     border-radius: 10px;
     background-size: cover;
-  }
+  } */
 
 /* Logo */
 .logo-image {
@@ -279,13 +279,13 @@ h1 {
     width: 100%;
     border-radius: 10px;
   }
-  .loading-indicator{
+  /* .loading-indicator{
     background-image: url("images/bg-today-large.svg");
     height: 180px;
     width: 100%;
     border-radius: 10px;
     background-size: cover;
-  }
+  } */
 }
 .daily-icon {
   width: 40px;
@@ -323,3 +323,4 @@ h1 {
   color: #fff;
 
 }
+
